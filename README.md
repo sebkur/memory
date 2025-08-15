@@ -27,3 +27,15 @@ Example output:
     mintUpdate                             1        68.66    0.44%   69.48%
     bash                                  10        54.96    0.35%   69.83%
     python3                                2        52.61    0.34%   70.17%
+
+## Build
+
+To build binaries, run `cargo build --release`.
+
+Afterwards you can run `./target/release/memory`.
+
+## Produce continuous output, like top
+
+To run the tool with regular updates so that it looks a bit like top/htop:
+
+    watch -n 1 ./target/release/memory
